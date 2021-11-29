@@ -20,7 +20,7 @@ class ChatFragment : Fragment() {
 
     lateinit var binding: FragmentChatBinding
     private lateinit var msgAdapter: ChatMessageAdapter
-    val messages = mutableListOf(
+    private val messages = mutableListOf(
         ChatMessage("Hello I am robot how can I help you ?",0)
     )
 

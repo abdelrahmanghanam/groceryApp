@@ -1,16 +1,20 @@
 package ghanam.com.abdo.singletons
 
+import android.os.Build
 import ghanam.com.abdo.dataclasses.Item
+import ghanam.com.abdo.dataclasses.PreviousOrder
+import java.time.LocalDateTime
 
 object VirtualDB {
     var items:MutableList<Item>
-    var deliveryFee:Float
+    var prevOrders:MutableList<PreviousOrder>
+    var deliveryFee:Float=5.00f
     var currentFilter:String
     var priceFilter:String
     init
     {
-        deliveryFee=5.00f
         items= mutableListOf()
+        prevOrders= mutableListOf()
         currentFilter="all"
         priceFilter="mintomax"
     }
@@ -67,8 +71,7 @@ object VirtualDB {
                     return quantity
                 }
                 if(ite.quantity<=1) {
-                    items.remove(ite)
-                    return quantity
+                    return -1
                 }
             }
         }
@@ -81,5 +84,12 @@ object VirtualDB {
             total += ite.totalPrice
         }
         return total
+    }
+
+    fun addPrevOrder()
+    {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            prevOrders.add(PreviousOrder(LocalDateTime.now(),calculateTotal()+ deliveryFee))
+        }
     }
 }

@@ -26,7 +26,6 @@ class HomeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        // Inflate the layout for this fragment
         binding = FragmentHomeBinding.inflate(inflater, container, false)
         allItems=readProductsFromJson(context)
         filteredItems=filterItems(VirtualDB.currentFilter)
@@ -51,7 +50,11 @@ class HomeFragment : Fragment() {
                 }
             }
             signOutButton.setOnClickListener {
+                VirtualDB.clearCart()
                 Navigation.findNavController(it).navigate(R.id.action_homeFragment_to_loginFragment)
+            }
+            goToOrders.setOnClickListener {
+                Navigation.findNavController(it).navigate(R.id.action_homeFragment_to_previousOrdersFragment)
             }
             chatButton.setOnClickListener {
                 Navigation.findNavController(it).navigate(R.id.action_homeFragment_to_chatFragment)

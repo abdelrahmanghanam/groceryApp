@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/abdelrahman.Ghanam/AndroidStudioProjects/abdo/app/src/main/res/drawable/apple.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/abdelrahman.Ghanam/AndroidStudioProjects/abdo/app/src/main/res/drawable/banana.xml" value="0.14739583333333334" />
         <entry key="..\:/Users/abdelrahman.Ghanam/AndroidStudioProjects/abdo/app/src/main/res/drawable/circle.xml" value="0.20185185185185187" />
         <entry key="..\:/Users/abdelrahman.Ghanam/AndroidStudioProjects/abdo/app/src/main/res/drawable/custom_green_button.xml" value="0.2703125" />
         <entry key="..\:/Users/abdelrahman.Ghanam/AndroidStudioProjects/abdo/app/src/main/res/drawable/custom_input.xml" value="0.2703125" />
@@ -17,12 +18,17 @@
         <entry key="..\:/Users/abdelrahman.Ghanam/AndroidStudioProjects/abdo/app/src/main/res/layout/activity_main.xml" value="0.15534420289855072" />
         <entry key="..\:/Users/abdelrahman.Ghanam/AndroidStudioProjects/abdo/app/src/main/res/layout/fragment_cart.xml" value="0.136" />
         <entry key="..\:/Users/abdelrahman.Ghanam/AndroidStudioProjects/abdo/app/src/main/res/layout/fragment_chat.xml" value="0.3255208333333333" />
-        <entry key="..\:/Users/abdelrahman.Ghanam/AndroidStudioProjects/abdo/app/src/main/res/layout/fragment_home.xml" value="0.4" />
+        <entry key="..\:/Users/abdelrahman.Ghanam/AndroidStudioProjects/abdo/app/src/main/res/layout/fragment_home.xml" value="0.264" />
         <entry key="..\:/Users/abdelrahman.Ghanam/AndroidStudioProjects/abdo/app/src/main/res/layout/fragment_login.xml" value="0.3153846153846154" />
+        <entry key="..\:/Users/abdelrahman.Ghanam/AndroidStudioProjects/abdo/app/src/main/res/layout/fragment_order_confirmed.xml" value="0.12" />
+        <entry key="..\:/Users/abdelrahman.Ghanam/AndroidStudioProjects/abdo/app/src/main/res/layout/fragment_previous_order_card.xml" value="0.1296875" />
+        <entry key="..\:/Users/abdelrahman.Ghanam/AndroidStudioProjects/abdo/app/src/main/res/layout/fragment_previous_orders.xml" value="0.2" />
         <entry key="..\:/Users/abdelrahman.Ghanam/AndroidStudioProjects/abdo/app/src/main/res/layout/fragment_sign_up.xml" value="0.264" />
         <entry key="..\:/Users/abdelrahman.Ghanam/AndroidStudioProjects/abdo/app/src/main/res/layout/item_basket_card.xml" value="0.4" />
         <entry key="..\:/Users/abdelrahman.Ghanam/AndroidStudioProjects/abdo/app/src/main/res/layout/item_card.xml" value="0.2911392405063291" />
         <entry key="..\:/Users/abdelrahman.Ghanam/AndroidStudioProjects/abdo/app/src/main/res/layout/message_card.xml" value="0.4" />
+        <entry key="..\:/Users/abdelrahman.Ghanam/AndroidStudioProjects/abdo/app/src/main/res/layout/previous_order_card.xml" value="0.4" />
+        <entry key="..\:/Users/abdelrahman.Ghanam/AndroidStudioProjects/abdo/app/src/main/res/layout/previous_order_cart.xml" value="0.264" />
       </map>
     </option>
   </component>
@@ -31,5 +37,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.264" />
+      </ProjectState>
+    </option>
   </component>
 </project>

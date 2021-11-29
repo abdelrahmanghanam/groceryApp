@@ -24,9 +24,9 @@ class CartItemAdapter(  private val items: MutableList<Item>,val fragmentCartBin
     }
 
 
-    fun removeItem(ite: Item,position: Int) {
-        items.remove(ite)
-        notifyItemRemoved(position)
+    fun removeItem(currentItem:Item) {
+            items.remove(currentItem)
+            notifyDataSetChanged()
     }
 
 
@@ -56,7 +56,7 @@ class CartItemAdapter(  private val items: MutableList<Item>,val fragmentCartBin
                     itemQuantityText.text=quan.toString()
                     totalPriceText.text=DecimalFormatter.format(currentItem.totalPrice)
                     }else{
-                        removeItem(currentItem,position)
+                        removeItem(currentItem)
                     }
                     val total=VirtualDB.calculateTotal()
                     fragmentCartBinding.subtotalText.text=DecimalFormatter.format(total)

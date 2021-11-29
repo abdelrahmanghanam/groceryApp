@@ -43,6 +43,9 @@
         <action
             android:id="@+id/action_homeFragment_self"
             app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_previousOrdersFragment"
+            app:destination="@id/previousOrdersFragment" />
     </fragment>
     <fragment
         android:id="@+id/cartFragment"
@@ -52,6 +55,9 @@
         <action
             android:id="@+id/action_cartFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_cartFragment_to_orderConfirmedFragment"
+            app:destination="@id/orderConfirmedFragment" />
     </fragment>
     <fragment
         android:id="@+id/chatFragment"
@@ -60,6 +66,24 @@
         tools:layout="@layout/fragment_chat" >
         <action
             android:id="@+id/action_chatFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderConfirmedFragment"
+        android:name="ghanam.com.abdo.OrderConfirmedFragment"
+        android:label="fragment_order_confirmed"
+        tools:layout="@layout/fragment_order_confirmed" >
+        <action
+            android:id="@+id/action_orderConfirmedFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/previousOrdersFragment"
+        android:name="ghanam.com.abdo.PreviousOrdersFragment"
+        android:label="fragment_previous_orders"
+        tools:layout="@layout/fragment_previous_orders" >
+        <action
+            android:id="@+id/action_previousOrdersFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
     </fragment>
 </navigation>

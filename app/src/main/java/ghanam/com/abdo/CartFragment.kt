@@ -48,9 +48,10 @@ class CartFragment : Fragment() {
     private fun checkOut(it: View?) {
         if (it != null) {
             if (VirtualDB.getItemsCount()>0){
-            Navigation.findNavController(it).navigate(R.id.action_cartFragment_to_homeFragment)
-            VirtualDB.clearCart()
-            Toast.makeText(context,"successful order",Toast.LENGTH_SHORT).show()
+                VirtualDB.addPrevOrder()
+                Navigation.findNavController(it).navigate(R.id.action_cartFragment_to_orderConfirmedFragment)
+                VirtualDB.clearCart()
+                Toast.makeText(context,"successful order",Toast.LENGTH_SHORT).show()
             }else
                 Toast.makeText(context,"add something to cart first!",Toast.LENGTH_SHORT).show()
 
